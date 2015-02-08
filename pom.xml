@@ -29,27 +29,18 @@
 							<dependency>
 										<groupId>org.webjars</groupId>
     												<artifactId>bootstrap</artifactId>
-   												 		
-    														<version>3.3.3-SNAPSHOT</version>
-    															<packaging>jar</packaging>
-    																<description>WebJar for Bootstrap</description>
-   																		 <url>http://webjars.org</url>
+   																<version>3.3.3-SNAPSHOT</version>
+    															
    							</dependency>	
    							<dependency>
    								<groupId>org.webjars</groupId>
     									<artifactId>knockout</artifactId>
-    										<version>3.2.0-2-SNAPSHOT</version>
-    												
-    													<description>WebJar for Knockout</description>
-   															 <url>http://webjars.org</url>
+    										<version>3.2.0-2-SNAPSHOT</version>		
 
    							<dependency>
 								<groupId>org.webjars</groupId>
     								<artifactId>dagre-d3</artifactId>
-    									<version>0.3.3-SNAPSHOT</version>
-    										
-   												 <description>WebJar for dagre-d3</description>
-    												<url>http://webjars.org</url>
+    									<version>0.3.3-SNAPSHOT</version> 
    							</dependency>
   					</dependencies>	
 </project>
