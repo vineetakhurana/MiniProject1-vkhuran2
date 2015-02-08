@@ -10,13 +10,13 @@
         														<version>2.0.0-alpha-1</version>
 							</dependency>
 							<dependency>
-								<name>maven-nodejs-plugin</name>
+								
 										<groupId>com.github.eirslett</groupId>
    													<artifactId>frontend-maven-plugin</artifactId>
   																 <version>0.0.16</version>
 							</dependency>
 							<dependency>
-									<name>maven-less-plugin</name>
+									
 										<groupId>net.achingbrain</groupId>
 													<artifactId>less-maven-plugin</artifactId>
 																<version>1.0.3</version>
