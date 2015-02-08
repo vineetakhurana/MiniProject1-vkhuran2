@@ -1,0 +1,14 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+		<groupId>miniproj1</groupId>
+			<artifactId>miniproj1-parent</artifactId>
+				<version>1</version>
+					<dependencies>
+							<dependency>
+										<groupId>org.python</groupId>
+													<artifactId>jython</artifactId>
+																<version>2.5.0</version>
+																		</dependency>
+																			</dependencies>	
+																			</project>
+
