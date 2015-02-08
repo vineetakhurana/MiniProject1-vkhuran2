@@ -1,53 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>YOUR SINGLE-PAGE APP</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/bootstrap.css" media="screen">
 
-		<script src="js/libs.js"></script>
+<head>
 
-	</head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+     <meta http-equiv="X-UA-Compatible" content="IE=9">
+     <link rel="stylesheet" href="css/myd3css.css"> 
+   		<title>Quiz</title>
 
- 	<div class="container">
-      <div class="page-header" id="banner">
-      	<div class="row">
-         	<div class="col-lg-6 col-md-6 col-sm-4">
-         		<h1>Content</h1>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3">
-         		<h1>Template</h1>
-				</div>
-				<div class="col-lg-3 col-md-3 col-sm-2">
-         		<h1>Header</h1>
-				</div>
-			</div>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/local.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../www/js/libs.js"></script>
+	 <script type="text/javascript" src="../bower_components/knockoutjs/dist/knockout.js"
+        charset="utf-8"></script>
+         
+</head>
+
+<body>
+	
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+       
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+             </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">Q1</a>
+                    </li>
+                    <li>
+                        <a href="#services">Q2</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Q3</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+              <h1>QUIZ!!</h1> 
+             </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+ 
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right" src="../www/images/nodejs-dark.png" height="25%" width="25%">
+            <h3 class="featurette-heading">Q1. 
+                <span class="text-muted">NPM is the package manager for node.js?</span>
+            </h3>
+            <p class="lead"><input type="radio" value="true" name="radioGroup" data-bind="checked: Pref" />True &nbsp;
+        <input type="radio" value="false" name="radioGroup" data-bind="checked: Pref" />False   
+        <br/> <br/>
+           Result: <span  class="answer" data-bind = "text:Pref1"></span><br/>
+</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="services">
+            <img class="featurette-image img-circle img-responsive pull-left" src="../www/images/icon.png" height="20%" width="20%">
+            <h3 class="featurette-heading">Q2. 
+                <span class="text-muted">knockoutjs is based on Model-View-Controller(MVC) pattern</span>
+            </h3>
+            <p class="lead"><input type="radio" value="true" name="radioGroup" data-bind="checked: q2" />True  &nbsp;
+        <input type="radio" value="false" name="radioGroup" data-bind="checked: q2" />False  
+        <br/> <br/>
+        Result: <span class="answer" data-bind = "text:answer2"></span><br/></p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- Third Featurette -->
+        <div class="featurette" id="contact">
+            <img class="featurette-image img-circle img-responsive pull-right" src="../www/images/d3js.png" height="20%" width="20%">
+            <h3 class="featurette-heading">Q3. 
+                <span class="text-muted">D3.js is a JavaScript library that uses digital data to drive the creation and control of dynamic and interactive graphical forms which run in web browsers.</span>
+            </h3>
+            
+            <p class="lead"><input type="radio" value="true" name="radioGroup" data-bind="checked: q3" />True  &nbsp;
+        <input type="radio" value="false" name="radioGroup" data-bind="checked: q3" />False  
+        <br/> <br/>
+            Result: <span class="answer" data-bind = "text:answer3"></span><br/></p>
+        </div>
+        
+        <hr class="featurette-divider"> 
+        
+        <div class="my">
+    	<h2> How many got the quiz right?? </br>
+   			 Survey Over 3 Months: </h2>
+    	</div>
+		<div id="tooltip" class="hidden">
+    		<p><span id="value">100</span>
+    		</p>
 		</div>
-	</div>
+	
+    <script type="text/javascript" src="../bower_components/d3/d3.js"> </script>
+	
+   </div>
+    <!-- /.container -->
 
-	<div class="container">
-		<div class="row  ">
-			<div class="col-lg-10 col-lg-offset-1 col-sm-8 col-sm-offset-2" >
-				<div class=" well">
-					<p class="text-info lead">YOUR SINGLE-PAGE APP.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
 
-
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<ul class="list-inline">
-						<li class="pull-right"><a href="#top">Back to top</a></li>
-						<li><a href="/">HOME</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../www/js/libs.js"></script>
+</body>
 
 </html>
