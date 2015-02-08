@@ -1,3 +1,4 @@
 #!/bin/bash
-echo "hello"
+echo "printing contents of myshell.sh"
+echo "Build running"
 
