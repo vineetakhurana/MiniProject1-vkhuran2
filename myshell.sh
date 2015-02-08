@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "printing contents of myshell.sh"
-echo "Build running"
+echo "Printing myshell.sh"
+echo "Build Running"
 
