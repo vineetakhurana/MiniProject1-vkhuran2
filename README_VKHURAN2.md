@@ -1,4 +1,4 @@
-Plugin used:
+Plugin Used:
 
 node_modules
 
