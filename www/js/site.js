@@ -1,6 +1,7 @@
 
 function SiteSettingsViewModel() {
     var self = this;
+    //var ko = ''
     self.Pref = ko.observable('');
     self.q2 = ko.observable('');
     self.q3 = ko.observable('');
